@@ -21,8 +21,8 @@ function Products({ cat, filters, sort }) {
       try {
         const res = await axios.get(
           cat
-            ? `https://e-commerce-mern-with-redux-api.onrender.com/api/products?category=${cat}`
-            : `https://e-commerce-mern-with-redux-api.onrender.com/api/products`
+            ? `http://localhost:8000/api/products?category=${cat}`
+            : `http://localhost:8000/api/products`
         );
         setProducts(res.data);
       } catch (err) {}

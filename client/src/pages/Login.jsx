@@ -80,6 +80,9 @@ function Login() {
   useEffect(() => {
     if (currentUser) {
       navigate("/");
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 10);
     }
   }, [currentUser, navigate]);
 

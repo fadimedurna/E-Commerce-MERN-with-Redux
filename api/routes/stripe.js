@@ -1,7 +1,8 @@
-require("dotenv").config();
 const router = require("express").Router();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY_MY);
-console.log("stripe: ", stripe);
+const dotenv = require("dotenv");
+dotenv.config();
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY_MY;
+const stripe = require("stripe")(STRIPE_SECRET_KEY);
 
 router.post("/payment", (req, res) => {
   stripe.charges.create(
@@ -18,7 +19,6 @@ router.post("/payment", (req, res) => {
       }
     }
   );
-  console.log("req.body: ", req.body);
 });
 
 module.exports = router;

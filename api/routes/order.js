@@ -11,11 +11,11 @@ const router = require("express").Router();
 
 router.post("/", verifyToken, async (req, res) => {
   const newOrder = new Order(req.body);
-  //console.log("newOrder", newOrder);
+  console.log("newOrder", newOrder);
 
   try {
-    const savedOrder = await newOrder.save();
-    //console.log("savedOrder", savedOrder);
+    const savedOrder = await newOrder.save(); // save to MongoDB
+    console.log("savedOrder", savedOrder);
     res.status(200).json(savedOrder);
     console.log("200 status: Success!");
   } catch (err) {
