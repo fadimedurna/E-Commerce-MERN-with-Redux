@@ -112,8 +112,7 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     logout(dispatch);
-    navigate("/");
-    window.location.reload();
+    navigate("/login");
   };
 
   return (
