@@ -75,6 +75,9 @@ function Register() {
     // e is the event object
     e.preventDefault();
     register(dispatch, { username, email, password });
+    if (!email && !password && !username) {
+      alert("Please fill out all fields");
+    }
   };
 
   return (

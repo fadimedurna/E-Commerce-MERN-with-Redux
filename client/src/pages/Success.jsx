@@ -56,7 +56,7 @@ const Success = () => {
       }}>
       {orderId
         ? `Order has been created successfully. Your order number is ${orderId}`
-        : `Successfull. Your order is being prepared...`}
+        : `Plese login to place an order! If you are already logged in, please wait a few seconds.`}
       <button
         onClick={handleClick}
         style={{

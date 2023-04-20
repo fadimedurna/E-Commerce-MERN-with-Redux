@@ -91,6 +91,8 @@ function Login() {
       e.preventDefault();
       if (email && password) {
         login(dispatch, { email, password });
+      } else {
+        alert("Please fill in all fields");
       }
     } catch (err) {
       console.log(err);
@@ -117,7 +119,9 @@ function Login() {
             </Button>
             {error && <Error>Something went wrong!</Error>}
             <Link>DO YOU NOT REMEMBER THE PASSWORD?</Link>
-            <Link to='/register'>CREATE A NEW ACCOUNT</Link>
+            <Link onClick={() => navigate("/register")}>
+              DO YOU NOT HAVE AN ACCOUNT?
+            </Link>
           </Form>
         </Wrapper>
       </Container>

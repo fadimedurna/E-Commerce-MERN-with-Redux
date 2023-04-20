@@ -112,7 +112,6 @@ const Navbar = () => {
 
   const handleSignOut = () => {
     logout(dispatch);
-    navigate("/login");
   };
 
   return (
