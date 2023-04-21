@@ -14,7 +14,7 @@ import { userRequest } from "../requestMethods";
 require("dotenv").config();
 
 const REACT_APP_KEY = process.env.REACT_APP_KEY;
-console.log(`FR. KEY: ${REACT_APP_KEY}`);
+//console.log(`FR. KEY: ${REACT_APP_KEY}`);
 
 const Container = styled.div``;
 

@@ -28,17 +28,17 @@ const Success = () => {
           address: data.billing_details.address,
         });
         setOrderId(res.data._id);
-        console.log("res", res);
-        console.log("res.data", res.data);
-        console.log("res.data._id", res.data._id);
+        //console.log("res", res);
+        //console.log("res.data", res.data);
+        //console.log("res.data._id", res.data._id);
       } catch {}
     };
     data && createOrder();
   }, [cart, data, currentUser]);
 
-  console.log("cart", cart);
-  console.log("data", data);
-  console.log("orderId", orderId);
+  //console.log("cart", cart);
+  //console.log("data", data);
+  //console.log("orderId", orderId);
 
   const handleClick = () => {
     dispatch(resetCart({ cart }));
