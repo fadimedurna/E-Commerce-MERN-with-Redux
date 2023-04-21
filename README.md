@@ -49,8 +49,8 @@ password: test
 - With Sign Out, it is possible to log out by deleting user items from localStorage.
 - An order is created by making a stripe payment with the checkout button on the cart page. For each order, the token created when the user logs in must be verified.
 
-### When testing interactively of stripe payment, use a card number, such as 4242 4242 4242 4242.
-
+### When testing interactively of stripe payment:
+- Use a card number, such as 4242 4242 4242 4242.
 - Use a valid future date, such as 12/34.
 - Use any three-digit CVC (four digits fo# r American Express cards).
 - Use any value you like for other form fields.
