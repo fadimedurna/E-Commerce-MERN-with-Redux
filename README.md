@@ -60,3 +60,5 @@ password: test
 Backend and frontend deployed by render. 
 Finally, link of the application is: 
 [Thunderbolt Shop](https://e-commerce-mern-with-redux.onrender.com/)
+
+Note: Since the API works through render, the products open a bit slow. Thank you for your patience.
