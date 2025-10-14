@@ -52,10 +52,10 @@ password: test
 ### When testing interactively of stripe payment:
 - Use a card number, such as 4242 4242 4242 4242.
 - Use a valid future date, such as 12/34.
-- Use any three-digit CVC (four digits fo# r American Express cards).
+- Use any three-digit CVC (four digits for American Express cards).
 - Use any value you like for other form fields.
-
 - After the payment process is successful, it is directed to the Success page. In case of successful order, Order Number(id) appears on the screen. With the Go to Homepage button, redirection is made and the cart is cleared.
+<<<<<<< HEAD
 
 
 ## Environment Variables Setup
@@ -82,3 +82,5 @@ Replace the placeholders with your actual values:
 - `your_stripe_secret_key_here`: Your Stripe API secret key
 
 You can find a template in the `.env.example` file.
+=======
+>>>>>>> 0383ed4fe982343bd18395090fdc915ce5f5cacf
