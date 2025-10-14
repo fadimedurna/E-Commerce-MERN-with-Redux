@@ -12,6 +12,10 @@ const cors = require("cors");
 
 dotenv.config();
 
+// Print JWT Secret length and start of Stripe key for security reasons
+console.log('JWT Secret length:', process.env.JWT_SECRET?.length);
+console.log('Stripe key starts with:', process.env.STRIPE_SECRET_KEY_MY?.substring(0, 7));
+
 // Connect to MongoDB
 mongoose
   .connect(process.env.DB_CONNECTION)

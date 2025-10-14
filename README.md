@@ -57,8 +57,28 @@ password: test
 
 - After the payment process is successful, it is directed to the Success page. In case of successful order, Order Number(id) appears on the screen. With the Go to Homepage button, redirection is made and the cart is cleared.
 
-Backend and frontend deployed by render. 
-Finally, link of the application is: 
-[Thunderbolt Shop](https://e-commerce-mern-with-redux.onrender.com/)
 
-Note: Since the API works through render, the products open a bit slow. Thank you for your patience.
+## Environment Variables Setup
+
+To run this project, you need to set up environment variables:
+
+1. Create a `.env` file in the `/api` directory
+2. Add the following variables to your `.env` file:
+
+DB_CONNECTION=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
+
+JWT_SECRET=your_jwt_secret_key_here
+
+STRIPE_SECRET_KEY_MY=your_stripe_secret_key_here
+
+PORT=5000
+
+Replace the placeholders with your actual values:
+- `<username>`: Your MongoDB Atlas username
+- `<password>`: Your MongoDB Atlas password
+- `<cluster-url>`: Your MongoDB cluster URL
+- `<database-name>`: The name of your database
+- `your_jwt_secret_key_here`: A secure random string for JWT authentication
+- `your_stripe_secret_key_here`: Your Stripe API secret key
+
+You can find a template in the `.env.example` file.
