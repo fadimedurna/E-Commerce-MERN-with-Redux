@@ -63,7 +63,7 @@ To run this project, you need to set up environment variables:
 1. Create a `.env` file in the `/api` directory
 2. Add the following variables to your `.env` file:
 
-DB_CONNECTION=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
+DB_CONNECTION=mongodb+srv://`<username>`:`<password>`@`<cluster-url>`/`<database-name>`?retryWrites=true&w=majority
 
 JWT_SECRET=your_jwt_secret_key_here
 
